@@ -1,0 +1,21 @@
+1.)
+a) Wypełnić algorytm aktualizowania liczby chorych i zdrowych zgodnie ze wzorem.
+b) Narysować liczbę zarażonych i zdrowych od czasu
+c) Zmodyfikować skrypt tak, żeby symulawoał model SIR
+d) Narysować liczbę zarażonych, zdrowych i odpornych od czasu
+
+2.)
+a) Zakodować inicjalizację sieci losowej Erdosa-Renyiego (ER) o parametrach N i M
+b) Zakodować inicjalizację sieci bezskalowej Barabasi-Albert BA) o parametrach N i m
+c) Znaleźć wizualne różnice pomiędzy sieciami
+
+3.)
+a) Uzupełnić inicjalizację sieci losowej ER
+b) Zakodować algorytm modelu
+c) Stworzyć animację epidemii
+
+4.)
+a) Uzupełnić inicjalizację sieci losowej ER
+b) Zakodować algorytm modelu z zapisywaniem liczby zdrowych i chorych
+c) Narysować liczbę zarażonych i zdrowych od czasu
+d) Zmienić inicjalizację na sieć BA, poszukać różnicy przy różnych parametrach
