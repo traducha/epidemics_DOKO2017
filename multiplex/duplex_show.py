@@ -8,6 +8,7 @@ import os
 # constants
 N = 40
 M = 100
+av_family = 2
 
 r = 0.8  # rate of getting infected
 a = 0.5  # rate of recovery
@@ -22,7 +23,7 @@ family = ig.Graph()
 
 size = 0
 while size < N:
-    new = np.random.poisson(3)
+    new = np.random.poisson(av_family)
     if new == 0:
         continue
     if N - size < new:
