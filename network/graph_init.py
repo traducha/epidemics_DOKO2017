@@ -5,7 +5,7 @@ import igraph as ig
 # deklaracja stałych
 N = 50
 M = 100
-m = 2
+m = int(1.0 * M / N)
 
 # inicjalizacja i rysowanie sieci losowej
 g = ig.Graph.Erdos_Renyi(n=N, m=M)
