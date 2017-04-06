@@ -7,6 +7,7 @@ import random
 # deklaracja stałych
 N = 1000
 M = 2000
+m = int(1.0 * M / N)
 
 r = 0.2
 a = 1.0
@@ -18,7 +19,8 @@ start = 100
 times = 100000
 
 # inicjalizacja sieci
-g = ig.Graph.Erdos_Renyi(n=N, m=M)
+# g = ig.Graph.Erdos_Renyi(n=N, m=M)
+g = ig.Graph.Barabasi(n=N, m=m)
 g.vs()['state'] = 0  # zdrowy
 for i in xrange(start):
     node = random.randint(0, N-1)
