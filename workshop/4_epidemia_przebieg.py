@@ -13,7 +13,7 @@ r = 0.2
 a = 1.0
 
 print 'lambda = {}'.format(r/a)
-print 'wartość krytyczna = {}'.format(N / (2.0 * M))
+print 'wartość krytyczna = {}'.format(1.0 / (1.0 + ((2.0 * M) / N)))
 
 start = 100
 times = 100000

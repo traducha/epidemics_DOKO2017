@@ -11,7 +11,7 @@ M = 80
 r = 1.0
 a = 1.0
 
-start = 2
+start = 10
 times = 200
 
 # inicjalizacja sieci

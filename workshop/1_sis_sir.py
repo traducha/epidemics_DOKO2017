@@ -6,8 +6,8 @@ from matplotlib import pyplot as plt
 N = 1000.0
 I_0 = 1.0
 
-a = 1.0
-r = 0.004
+a = """WYPEŁNIĆ"""  # prawdopodobieństwo wyzdrowienia
+r = """WYPEŁNIĆ"""  # prawdopodobieństwo zarażenia się
 
 times = 5000
 dt = 0.001
@@ -21,7 +21,7 @@ T = [0]
 for i in range(1, times):
     I.append("""WYPEŁNIĆ""")
     S.append("""WYPEŁNIĆ""")
-    T.append("""WYPEŁNIĆ""")
+    T.append(T[i-1] + dt)
 
 # rysowanie wykresu
 sus, = plt.plot(T, S, color='b')

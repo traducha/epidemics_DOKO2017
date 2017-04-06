@@ -140,7 +140,7 @@ for r in rs:
 # plotting
 susER, = plt.plot(rs, sus, color='c')
 infER, = plt.plot(rs, inf, color='pink')
-plt.plot([N / (2.0 * len(g.es())), N / (2.0 * len(g.es()))], [0, N], 'k--')
+plt.plot([1.0 / (1.0 + (2.0 * len(g.es()) / N)), 1.0 / (1.0 + (2.0 * len(g.es()) / N))], [0, N], 'k--')
 plt.legend([sus_, inf_, susER, infER], [u'zdrowi duplex', u'chorzy duplex', u'zdrowi ER', u'chorzy ER'])
 # plt.savefig("plots/duplex3.png")
 plt.title("N={}, M={}, av_fam={}, M_ER={}".format(N, M, av_family, len(g.es())))

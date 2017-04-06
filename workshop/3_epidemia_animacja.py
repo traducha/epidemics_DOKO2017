@@ -8,10 +8,10 @@ import os
 N = 30
 M = 80
 
-r = 1.0
-a = 1.0
+r = 1.0  # prawdopodobieństwo zarażenia się
+a = 1.0  # prawdopodobieństwo wyzdrowienia
 
-start = 2
+start = 10
 times = 200
 
 # inicjalizacja sieci

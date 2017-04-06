@@ -3,8 +3,8 @@
 import igraph as ig
 
 # deklaracja stałych
-N = 50
-M = 100
+N = """WYPEŁNIĆ"""
+M = """WYPEŁNIĆ"""
 m = 2
 
 # inicjalizacja i rysowanie sieci losowej
