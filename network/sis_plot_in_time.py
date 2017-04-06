@@ -9,7 +9,7 @@ N = 1000
 M = 2000
 m = int(1.0 * M / N)
 
-r = 0.2
+r = 0.25
 a = 1.0
 
 print('lambda = {}'.format(r/a))
@@ -44,9 +44,15 @@ for i in xrange(times):
     sus.append(N - infected)
 
 # tworzenie wykresu
-sus, = plt.plot(range(times), sus, color='b')
-inf, = plt.plot(range(times), inf, color='r')
-plt.legend([sus, inf], [u'zdrowi', u'chorzy'])
-plt.xlabel(u'Czas')
-plt.ylabel(u'Liczba osób')
+fig = plt.figure()
+ax1 = fig.add_subplot('211')
+sus, = ax1.plot(range(times), sus, color='b')
+ax1.set_ylabel(u'Liczba osób')
+ax1.legend([sus], [u'zdrowi'])
+
+ax2 = fig.add_subplot('212')
+inf, = ax2.plot(range(times), inf, color='r')
+ax2.legend([inf], [u'chorzy'])
+ax2.set_xlabel(u'Czas')
+ax2.set_ylabel(u'Liczba osób')
 plt.show()

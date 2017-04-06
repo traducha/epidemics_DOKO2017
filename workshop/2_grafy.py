@@ -5,7 +5,7 @@ import igraph as ig
 # deklaracja stałych
 N = """WYPEŁNIĆ"""
 M = """WYPEŁNIĆ"""
-m = 2
+m = int(1.0 * M / N)
 
 # inicjalizacja i rysowanie sieci losowej
 g = """INICJALIZACJA SIECI ER"""
