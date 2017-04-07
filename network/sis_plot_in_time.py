@@ -22,8 +22,7 @@ times = 100000
 # g = ig.Graph.Erdos_Renyi(n=N, m=M)
 g = ig.Graph.Barabasi(n=N, m=m)
 g.vs()['state'] = 0  # zdrowy
-for i in xrange(start):
-    node = random.randint(0, N-1)
+for node in random.sample(range(N), start):
     g.vs(node)['state'] = 1  # chory
 
 sus = []

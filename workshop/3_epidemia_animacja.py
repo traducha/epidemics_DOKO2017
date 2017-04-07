@@ -11,15 +11,14 @@ M = 80
 r = 1.0  # prawdopodobieństwo zarażenia się
 a = 1.0  # prawdopodobieństwo wyzdrowienia
 
-start = 10
-times = 200
+start = 10  # początkowa liczba chorych
+times = 200  # liczba kroków czasowych
 
 # inicjalizacja sieci
 g = """INICJALIZACJA SIECI"""
 g.vs()['state'] = 0  # zdrowy
 g.vs()['color'] = """KOLOR ZDROWEGO"""
-for i in xrange(start):
-    node = random.randint(0, N-1)
+for node in random.sample(range(N), start):
     g.vs(node)['state'] = 1  # chory
     g.vs(node)['color'] = """KOLOR CHOREGO"""
 
